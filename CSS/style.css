@@ -1,0 +1,181 @@
+:root {
+     --brtorange: hsl(31, 77%, 52%);
+     --dkcyan: hsl(184, 100%, 22%);
+     --vdkcyan: hsl(179, 100%, 13%);
+     --tspwhite: hsla(0, 0%, 100%, 0.75);
+     --ltgray: hsl(0, 0%, 95%);
+}
+
+@font-face {
+     font-family: "Lexend";
+     src: url(../Font/BigShouldersDisplay-Regular.ttf);
+}
+
+@font-face {
+     font-family: "BigShoulders";
+     src: url(../Font/BigShouldersDisplay-Regular.ttf);
+}
+
+@font-face {
+     font-family: "spartan";
+     src: url(../Font/Spartan-Medium.ttf);
+}
+
+html {
+     font: 15px;
+     font-family: "spartan";
+}
+
+body {
+     padding: 0;
+     margin: 0;
+     box-sizing: border-box;
+
+
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-direction: column;
+}
+
+.container {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-direction: column;
+}
+
+
+
+.card {
+     width: 90%;
+}
+
+.heading {
+     margin: 3rem 3rem 0 3rem;
+}
+
+h1 {
+     font-family: "BigShoulders", sans-serif;
+     font-size: 2.7rem;
+     color: var(--ltgray);
+     font-weight: 600;
+}
+
+.heading p {
+     font-size: .9rem;
+     color: var(--tspwhite);
+     line-height: 1.5;
+}
+
+.btn button {
+     height: 3rem;
+     font-family: "spartan";
+     background-color: var(--ltgray);
+     border: none;
+     font-weight: 700;
+     margin: 1rem 0 3rem 0;
+     border-radius: 2.5rem;
+     cursor: pointer;
+}
+
+.btn button span {
+     margin: 1rem 1.7rem;
+}
+
+.btn-sedan button {
+     color: var(--brtorange);
+}
+
+.btn-suvs button {
+     color: var(--dkcyan);
+}
+
+.btn-luxury button {
+     color: var(--vdkcyan);
+}
+
+.sedan {
+     background-color: var(--brtorange);
+     margin-top: 5rem;
+     border-top-left-radius: .5rem;
+     border-top-right-radius: .5rem;
+}
+
+.suvs {
+     background-color: var(--dkcyan);
+}
+
+.luxury {
+     background-color: var(--vdkcyan);
+     border-bottom-left-radius: .5rem;
+     border-bottom-right-radius: .5rem;
+}
+
+
+.attribution {
+     margin-top: 5rem;
+     font-size: 11px;
+     text-align: center;
+}
+
+.attribution a {
+     color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 1440px) {
+
+
+     html {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+     }
+
+     body {
+          height: 100vh;
+          max-width: 1440px;
+     }
+
+     .container {
+          margin: 0 12rem;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: row;
+     }
+
+     .card {
+          width: 30%;
+          height: 100%;
+          border-radius: 0;
+     }
+
+     .heading p {
+          line-height: 2;
+     }
+
+     .sedan {
+          margin-left: ;
+          margin-top: 0;
+          border-top-left-radius: .5rem;
+          border-bottom-left-radius: .5rem;
+     }
+
+     .luxury {
+          border-top-right-radius: .5rem;
+          border-bottom-right-radius: .5rem;
+     }
+
+     .btn button {
+          margin-top: 5rem;
+          box-sizing: border-box;
+          border: .2rem solid var(--ltgray);
+     }
+
+     .btn button:hover {
+          background-color: rgba(255, 255, 255, 0);
+          border: .2rem solid var(--ltgray);
+          color: var(--ltgray);
+     }
+}
